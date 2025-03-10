@@ -1,4 +1,4 @@
-def print_square(size):
+"""def print_square(size):
     for _ in range(size):
         print('*' * size)
 
@@ -56,4 +56,13 @@ def main():
             print("Некорректный выбор.")
 
 if __name__ == "__main__":
-    main()
+    main()"""
+
+line = input("Введите строку:")
+
+clean_str =''.join(line.split()).lower()
+palin = clean_str == clean_str[::-1]
+if palin:
+    print("Палиндром")
+else:
+    print("Не палиндром")
